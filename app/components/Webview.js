@@ -3,7 +3,7 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   StyleSheet,
   Text,
@@ -11,30 +11,23 @@ import {
   TouchableOpacity,
   ToolbarAndroid,
   WebView
-} from 'react-native';
+} from 'react-native'
 
 export default class Search extends Component {
 
   onChange = (state) => {
-    this.setState(state);
+    this.setState(state)
   }
 
   constructor() {
-    super();
-
-  console.log(this.props)
-
+    super()
   }
 
   //layout
   render(){
     return (
       <View style={styles.webViewParent}>
-      <ToolbarAndroid style={styles.toolbar}
-        title={this.props.title}
-        onIconClicked={this.props.navigator.pop}
-        titleColor={'#000000'}/>
-      <WebView
+        <WebView
           automaticallyAdjustContentInsets={false}
           style={styles.webView}
           source={{uri: this.props.url}}
@@ -45,7 +38,7 @@ export default class Search extends Component {
           startInLoadingState={true}
         />
       </View>
-    )
+    )+
   }
 
 }
@@ -53,6 +46,7 @@ let styles = StyleSheet.create({
   webViewParent:{
     flexDirection:"column",
     alignItems:"stretch",
+    backgroundColor:"#ffffff",
     flex:1,
   },
   toolbar: {
