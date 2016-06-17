@@ -1,0 +1,3 @@
+rootProject.name = 'Githubr'
+
+include ':app'
