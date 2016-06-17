@@ -24,3 +24,11 @@ There's an annotated tag labeled 3hr on this repository that marks 3 hours into 
 I just wanted to add how simple it is to setup async & databinding in React Native vs Java, it took me a few minutes to start pulling data and displaying it vs having to setup multiple libraries with complex syntax and un-obvious class generation. Although I'm not extremely confident in the performance of certain React Views and would be curious to see how this does on an older Nexus. I started with a ListView, which was pretty buggy. Later on I went on to use a RecyclerViewBackedScrollView which is an abstraction on the native RecyclerView (both of which are known to have better performance/functionality than ListView).
 
 I just wanted to add how simple it is to setup async & databinding in React Native vs Java, it took me a little time to start pulling data and displaying it vs having to setup multiple libraries with complex syntax and un-obvious class generation. As stated above, some React Views aren't reliable and would be curious to do more testing on a true native device. The main drawback I have with the data binding is the lack of typing & POJO style models. Which Im sure could be added with additional libraries.
+
+
+## Installation
+
+To get this app installed & working, follow the instructions to install React Native here
+[React Native Getting Started](https://facebook.github.io/react-native/docs/getting-started.html)
+
+Then run `react-native start` in the Githubr directory w/ your Android Simulator running
