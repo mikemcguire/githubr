@@ -1,4 +1,4 @@
-# Githubbi
+# Githubr
 
 Simple Android app that searches github repositories and opens them in a webview.
 
